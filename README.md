@@ -1,8 +1,8 @@
 # Projet ExpressJS : Exercices
 
 Ce projet contient une série d'exercices pour apprendre à utiliser ExpressJS, organisés en sections thématiques. Chaque exercice est accompagné de captures d'écran dans le dossier `screen/` :
-- **Captures de code** : Nommées `sc-ex<Chapitre><Exercice>` (ex. `I/sc-ex1`).
-- **Captures de réponses/résultats** : Nommées `sr-ex<Chapitre><Exercice>` (ex. `I/sr-ex1`).# I - Introduction à ExpressJS
+- **Captures de code** : Nommées `<Chapitre>/sc-ex<Exercice>` (ex. `I/sc-ex1`).
+- **Captures de réponses/résultats** : Nommées `<Chapitre>/sr-ex<Exercice>` (ex. `I/sr-ex1`).# I - Introduction à ExpressJS
 
 ## Exercice 1 : Créer un serveur ExpressJS simple
 **Description** : Création d'un serveur ExpressJS qui répond "Bonjour le monde" sur la route principale (`/`) et affiche la date et l'heure actuelles sur la route `/date`.
