@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'images</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+        .gallery img { width: 100%; height: auto; border-radius: 5px; }
+        .no-images { color: #555; }
+    </style>
+</head>
+<body>
+    <h2>Galerie d'images</h2>
+    <p><a href="/upload">Uploader une nouvelle image</a></p>
+    <% if (images.length === 0) { %>
+        <p class="no-images">Aucune image dans la galerie.</p>
+    <% } else { %>
+        <div class="gallery">
+            <% images.forEach(image => { %>
+                <img src="/uploads/<%= image %>" alt="Image uploadée">
+            <% }); %>
+        </div>
+    <% } %>
+</body>
+</html>
